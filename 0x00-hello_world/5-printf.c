@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - starting point of file
  *
  * Return: always 0 (success)
