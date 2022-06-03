@@ -11,7 +11,7 @@ int main(void)
 	char apt;
 	char convertedInt;
 
-	for (num = 0; num <= 16; num++)
+	for (num = 0; num <= 9; num++)
 	{
 		convertedInt = num + '0';
 		putchar(convertedInt);
