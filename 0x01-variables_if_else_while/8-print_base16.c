@@ -16,7 +16,7 @@ int main(void)
 		convertedInt = num + '0';
 		putchar(convertedInt);
 	}
-	for (apt = "a"; apt <= 'f'; apt++)
+	for (apt = 'a'; apt <= 'f'; apt++)
 		putchar(apt);
 	putchar('\n');
 	return (0);
