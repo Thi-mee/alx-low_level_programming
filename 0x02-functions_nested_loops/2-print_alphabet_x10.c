@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_alphabet - Check description
@@ -18,17 +19,3 @@ void print_alphabet_x10(void)
 			putchar('\n');
 	}
 }
-
-/**
- * main - Check description
- * Description: It prints the word "_putchar", followed by a new line.
- * Return: 0.
- */
-int main(void)
-{
-
-	print_alphabet_x10();
-	return (0);
-
-}
-
