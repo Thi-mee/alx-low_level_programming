@@ -36,6 +36,6 @@ int main(void)
 			return (0);
 		}
 		printf("%lu%lu, ", first, second);
-
+	}
 	return (0);
 }
