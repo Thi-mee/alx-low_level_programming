@@ -42,5 +42,6 @@ int main(void)
 		b_1 = first;
 		b_2 = second;
 	}
+	printf("\n");
 	return (0);
 }
