@@ -22,12 +22,13 @@ int main(void)
 	}
 	for (; i < 98; i++)
 	{
-		a_1 = fibonacci[i - 2] / 10000000;
-		a_2 = fibonacci[i - 2] % 10000000;
-		b_1 = fibonacci[i - 1] / 10000000;
-		b_2 = fibonacci[i - 1] % 10000000;
-		second = (a_2 + b_2) % 10000000;
-		overflow = (a_2 + b_2) / 10000000;
+		a_1 = fibonacci[i - 2] / 10000000000;
+		a_2 = fibonacci[i - 2] % 10000000000;
+		b_1 = fibonacci[i - 1] / 10000000000;
+		b_2 = fibonacci[i - 1] % 10000000000;
+
+		second = (a_2 + b_2) % 10000000000;
+		overflow = (a_2 + b_2) / 10000000000;
 		first = a_1 + b_1 + overflow;
 
 		if (i == 97)
