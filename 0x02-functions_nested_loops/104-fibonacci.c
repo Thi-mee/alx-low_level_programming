@@ -9,22 +9,33 @@
 int main(void)
 {
 	int i;
-	unsigned long fibonacci[98];
+	unsigned long fibonacci[98], a_1, a_2, b_1, b_2, first, second, overflow;
 
 	fibonacci[0] = 1;
 	fibonacci[1] = 2;
 	printf("%lu, %lu, ", fibonacci[0], fibonacci[1]);
 
-	for (i = 2; i < 98; i++)
+	for (i = 2; i < 93; i++)
 	{
 		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-		if (i == 97)
-		{
-			printf("%lu\n", fibonacci[i]);
-		}
 		printf("%lu, ", fibonacci[i]);
 	}
+	for (; i < 98; i++)
+	{
+		a_1 = fibonacci[i - 2] / 10000000;
+		a_2 = fibonacci[i - 2] % 10000000;
+		b_1 = fibonacci[i - 1] / 10000000;
+		b_2 = fibonacci[i - 1] % 10000000;
+		second = (a_2 + b_2) % 10000000;
+		overflow = (a_2 + b_2) / 10000000;
+		first = a_1 + b_1 + overflow;
+
+		if (i == 97)
+		{
+			printf("%lu%lu\n", first, second);
+			return (0);
+		}
+		printf("%lu%lu, ", first, second);
+
 	return (0);
 }
-
-
