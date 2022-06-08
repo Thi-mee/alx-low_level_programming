@@ -15,12 +15,12 @@ int main(void)
 	fibonacci[1] = 2;
 	printf("%lu, %lu, ", fibonacci[0], fibonacci[1]);
 
-	for (i = 2; i < 93; i++)
+	for (i = 2; i < 92; i++)
 	{
 		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 		printf("%lu, ", fibonacci[i]);
 	}
-	for (; i < 98; i++)
+	for (i = 92; i < 98; i++)
 	{
 		a_1 = fibonacci[i - 2] / 10000000000;
 		a_2 = fibonacci[i - 2] % 10000000000;
