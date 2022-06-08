@@ -35,7 +35,7 @@ int main(void)
 		second = (a_2 + b_2) - (10000000000 * overflow);
 		first = a_1 + b_1 + overflow;
 
-		if (i == 97)
+		if (i == 98)
 		{
 			printf("%lu%lu\n", first, second);
 			return (0);
