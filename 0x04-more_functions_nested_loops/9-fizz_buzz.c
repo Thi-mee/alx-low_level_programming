@@ -8,20 +8,20 @@
 
 int main(void)
 {
-	int count;
+	int i;
 
-	for (count = 1; count <= 100; count++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (count % 15 == 0)
+		if (i % 15 == 0)
 			printf("FizzBuzz");
-		else if (count % 3 == 0)
+		else if (i % 3 == 0)
 			printf("Fizz");
-		else if (count % 5 == 0)
+		else if (i % 5 == 0)
 			print("Buzz");
 		else
-			printf("%d", count);
+			printf("%d", i);
 
-		if (count < 100)
+		if (i < 100)
 			printf(" ");
 	}
 	printf("\n");
