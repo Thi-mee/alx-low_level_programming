@@ -2,7 +2,7 @@
 
 /**
  * main - finds the largest of
- * prime factors
+   prime factors
  * Return: 0 (Success)
  */
 
@@ -24,3 +24,4 @@ int main(void)
 	printf("%d\n", num);
 	return (0);
 }
+
