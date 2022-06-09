@@ -3,10 +3,9 @@
 
 /**
  * _isupper - checks for uppercase
- * @c : integer to be checked
- * Return : 1 if true. Otherwise 0
+ * @c: integer to be checked
+ * Return: 1 if true. 0 if false
  */
-
 int _isupper(int c)
 {
 	int i;
@@ -16,7 +15,5 @@ int _isupper(int c)
 		if (c == i)
 			return (1);
 	}
-
 	return (0);
 }
-
