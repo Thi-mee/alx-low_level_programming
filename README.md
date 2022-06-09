@@ -1,1 +1,1 @@
-Read me my gee
+C programming basics
