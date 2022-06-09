@@ -12,11 +12,11 @@ int main(void)
 
 	for (count = 1; count <= 100; count++)
 	{
-		if (count % 15 = 0)
+		if (count % 15 == 0)
 			printf("FizzBuzz ");
-		else if (count % 3 = 0)
+		else if (count % 3 == 0)
 			printf("Fizz ");
-		else if (count % 5 = 0)
+		else if (count % 5 == 0)
 			print("Buzz ");
 		else
 			printf("%d ", count);
