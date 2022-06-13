@@ -3,16 +3,16 @@
 /**
  * get_length - gets length
  * @str: string
- * Return: void
+ * Return: int
  */
 
-void get_length(char *str)
+int get_length(char *str)
 {
 	int len = 0;
 
-	while (str != '\0')
+	while (str[len] != '\0')
 		len++;
-	return (length - 1);
+	return (len - 1);
 }
 
 /**
