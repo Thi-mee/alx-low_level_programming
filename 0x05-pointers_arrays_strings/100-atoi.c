@@ -19,10 +19,10 @@ int _strlen(char *s)
 }
 
 /**
- *  * idx_num_starts - find index where a digit is first found in string
- *   * @s: string to search
- *    * Return: integer index where digit is first found
- *     */
+ * idx_num_starts - find index where a digit is first found in string
+ * @s: string to search
+ * Return: integer index where digit is first found
+ */
 
 int idx_num_starts(char *s)
 {
