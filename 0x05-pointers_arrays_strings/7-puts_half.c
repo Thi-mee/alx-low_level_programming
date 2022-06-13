@@ -12,7 +12,7 @@ int get_length(char *str)
 
 	while (str[len] != '\0')
 		len++;
-	return (len - 1);
+	return (len);
 }
 
 /**
