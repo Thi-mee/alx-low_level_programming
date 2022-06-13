@@ -15,7 +15,7 @@ void puts2(char *str)
 		index++;
 	for (; index > 0; index--)
 	{
-		if (index % 2 = 0)
+		if (index % 2 == 0)
 			_putchar(str[index - 1]);
 		else
 			continue;
