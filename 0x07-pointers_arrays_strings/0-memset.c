@@ -1,19 +1,21 @@
 /**
- * _memset - fills memory with constant byte
- * @s: pointer to be returned
- * @b: char
- * @n: no of bytes
- * Return: pointer to a character
+ * _memset - fills n bytes of memory
+ *
+ * @s: pointer to start of memory area
+ * @b: constant byte to fill with
+ * @n: num bytes to fill in
+ *
+ * Return: pointer to beginning of memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-        unsigned int i = 0;
-        char *rt = s;
+	unsigned int i = 0;
+	char *start = s;
 
-        while (i < n)
-        {
-                *rt++ = b;
-                i++;
-        }
-        return (rt++);
+	while (i < n)
+	{
+		*s++ = b;
+		i++;
+	}
+	return (start);
 }
