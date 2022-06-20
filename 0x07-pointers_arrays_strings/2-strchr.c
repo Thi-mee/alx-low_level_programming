@@ -1,21 +1,23 @@
+#include <stdio.h>
 /**
- * _memcpy - copys n bytes of memory
+ * _strchr - finds if char occurs in string
  *
- * @dest: pointer to dest str
- * @src: source to be copied from
- * @n: num bytes to copy from src
+ * @s: string to check
+ * @c: character to find in s
  *
- * Return: pointer to beginning of
- * memory area dest
+ * Return: pointer to first instance of c, otherwise NULL
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i = 0;
+	int i = 0;
 
-	while (i < n)
+	while (*(s + i))
 	{
-		*dest++ = *src++;
+		if (*(s + i) == c)
+			return (s + i);
 		i++;
 	}
-	return (dest);
+	if (*(s + i) == c)
+		return (s + i);
+	return (NULL);
 }
