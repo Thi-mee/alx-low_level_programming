@@ -1,7 +1,4 @@
 #include "main.h"
-/**
- * Author: Thimee
- */
 
 /**
  * _puts_recursion - prints out string
@@ -9,7 +6,6 @@
  * @s: string
  * Return: void
  */
-
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
@@ -18,5 +14,5 @@ void _puts_recursion(char *s)
 		return;
 	}
 	_putchar(*s);
-	_puts_recursion(s+1);
+	_puts_recursion(s + 1);
 }
