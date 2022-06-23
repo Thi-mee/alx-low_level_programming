@@ -25,7 +25,7 @@ int substring_match(char *s1, char *s2, char *after_wldcd)
 }
 
 /**
- * wildcmp - compare if string 
+ * wildcmp - compare if string
  * with wildcard mattches
  * @s1: one string
  * @s2: one string
