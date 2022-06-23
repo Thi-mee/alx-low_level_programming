@@ -11,11 +11,14 @@ int check_sqrt(int n, int i)
 {
 	if (i * i > n)
 		return (-1);
-	return (check_sqrt(n, i + 1));
+	else if (i * i == n)
+		return (i);
+	else
+		return (check_sqrt(n, i + 1);
 }
 
 /**
- * _sqrt_recursion - returns the 
+ * _sqrt_recursion - returns the
  * natural square root of a number
  * @n: integer
  * Return: integer
