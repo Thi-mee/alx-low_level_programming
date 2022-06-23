@@ -24,6 +24,6 @@ int check_sqrt(int n, int i)
 int _sqrt_recursion(int n)
 {
 	if (n <= 0)
-		retirn (-1);
+		return (-1);
 	return (check_sqrt(n, 0));
 }
