@@ -14,7 +14,7 @@ int check_sqrt(int n, int i)
 	else if (i * i == n)
 		return (i);
 	else
-		return (check_sqrt(n, i + 1);
+		return (check_sqrt(n, i + 1));
 }
 
 /**
