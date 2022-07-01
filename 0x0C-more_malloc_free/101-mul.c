@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * _print - moves a string one place to the left and prints the string
+ * _print - moves a string one place
+ * to the left and prints the string
  * @str: string to move
  * @l: size of string
  *
@@ -27,12 +28,15 @@ void _print(char *str, int l)
 }
 
 /**
- * mul - multiplies a char with a string and places the answer into dest
+ * mul - multiplies a char with a
+ * string and places the answer into
+ * dest
  * @n: char to multiply
  * @num: string to multiply
  * @num_index: last non NULL index of num
  * @dest: destination of multiplication
- * @dest_index: highest index to start addition
+ * @dest_index: highest index to start
+ * addition
  *
  * Return: pointer to dest, or NULL on failure
  */
@@ -62,7 +66,8 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	return (dest);
 }
 /**
- * check_for_digits - checks the arguments to ensure they are digits
+ * check_for_digits - checks the arguments
+ * to ensure they are digits
  * @av: pointer to arguments
  *
  * Return: 0 if digits, 1 if not
