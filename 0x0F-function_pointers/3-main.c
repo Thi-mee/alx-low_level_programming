@@ -1,20 +1,16 @@
 #include "3-calc.h"
 
+
 /**
- * main - entry point
- * @argc: number of arguments
- * @argv: argument vector
- * Return: always 0 (Success)
+ * main - Entry point
+ * @argc: the number of arguments including the program name passed
+ * @argv: a pointer to pointers to the strings submitted as arguments
+ * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int x, y, ans;
-	char *operator;
 	int (*fp)(int, int);
-
-	x = atoi(argv[1]);
-	y = atoi(argv[3]);
-	operator = argv[2];
 
 	if (argc != 4)
 	{
@@ -26,13 +22,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if (((*operator == '/') || (*operator == '%')) && (y == 0))
+	if ((*argv[2] == '%' || *argv[2] == '/') && (*argv[3] == '0'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-
-	fp = get_op_func(operator);
+	x = atoi(argv[1]);
+	y = atoi(argv[3]);
+	fp = get_op_func(argv[2]);
 	ans = fp(x, y);
 	printf("%d\n", ans);
 	return (0);
