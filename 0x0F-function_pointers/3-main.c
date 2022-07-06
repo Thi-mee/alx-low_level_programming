@@ -26,12 +26,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*operator != '+') && (*operator != '-') && (*operator != '*') \
-	&& (*operator != '/') && (*operator != '%'))
-	{
-		printf("Error\n");
-		exit(99);
-	}
 	if (((*operator == '/') || (*operator == '%')) && (y == 0))
 	{
 		printf("Error\n");
