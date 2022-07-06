@@ -1,11 +1,11 @@
 nclude "function_pointers.h"
 
 /**
- *  * int_index - finds char in an array
- *   * @array: array
- *    * @cmp: pointer to function
- *     * Return: index of char
- *      */
+ * int_index - finds char in an array
+ * @array: array
+ * @cmp: pointer to function
+ * Return: index of char
+ */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
