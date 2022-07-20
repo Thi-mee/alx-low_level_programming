@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
+
+void free_list(listint_t *head);
 
 /**
  * free_listint_safe - A function that frees a list
