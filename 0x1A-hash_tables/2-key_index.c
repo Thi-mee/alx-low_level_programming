@@ -1,14 +1,13 @@
 #include "hash_tables.h"
+
 /**
- * key_index - get index in hash table
- * @key: string for generate key number random
- * @size: len of hash table
- * Return: index where must be stored data in hash table
+ * key_index - gives the index of a key
+ * @key: key to get index for
+ * @size: size of the hash table
+ *
+ * Return: index for the key
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	if (key == NULL)
-		return (0);
-
 	return (hash_djb2(key) % size);
 }
