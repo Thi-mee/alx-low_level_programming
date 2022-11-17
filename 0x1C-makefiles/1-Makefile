@@ -1,0 +1,6 @@
+CC:= gcc
+SRC:= $(wildcard *.c)
+
+
+all: ${SRC} m.h
+	${CC} ${SRC} m.h -o school
