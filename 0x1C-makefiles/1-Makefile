@@ -1,5 +1,8 @@
-CC:= gcc
-SRC:= $(wildcard *.c)
+# run with 'make -f 1-Makefile'
+
+
+CC = gcc
+SRC = school.c main.c
 
 
 all: ${SRC} m.h
